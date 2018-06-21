@@ -16,7 +16,7 @@
 }
 
 .col-md-1 {
-    border: 1px solid black;
+    border: 1px solid #000000;
     height: 30px;
 }
 
@@ -24,9 +24,6 @@
     color: #9b9b9b;
     font-size: 12px;
 }
-
-.body {}
-
 .div1 {
     width: 1425px;
     height: 31px;
@@ -39,4 +36,62 @@
     width: 990px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.div1_1_1{
+    width: 990px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.div1_1_2{
+    display: flex;
+    align-items: center;
+}
+.li1{
+    padding: 0 8px;
+    color: #9b9b9b;
+    line-height: 30px;
+    font-size: 12px;
+    height: 30px;
+    width: 68px;
+    float: left;
+    list-style: none;
+}
+
+.li2{
+    border-right:1px solid #9b9b9b; 
+    height: 12px;
+    width: 1px;
+    float: left;
+    list-style: none;
+}
+.ycdiv{
+    position: absolute;
+    border-right: 1px solid #e3e4e5;
+    border-left: 1px solid #e3e4e5;
+    border-bottom: 1px solid #e3e4e5;
+    display: none;
+    z-index: 999;
+    height: 100px;
+    width: 331px;
+}
+.ycdiv2{
+    display: flex;
+    padding: 10px 0 10px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    width: 331px;
+}
+.ycdiv3{
+    padding: 0 18px 0 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ycdiv3 font{
+    font-size: 12px;
+    color: #999;
+
 }
