@@ -217,7 +217,7 @@
 
 .col-md-3 {
     height: 306px;
-    border: 1px dashed #cacaca;
+    
 }
 
 #image1 {
@@ -245,10 +245,10 @@
     font-size: 14px;
 }
 
-.favorcart1 {
+#favorcart1 {
     width: 115px;
     height: 28px;
-    background: url(images/cart1.png);
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid #999999;
@@ -257,9 +257,10 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    color: #000000;
 }
 
-.favorcart1 b {
+#favorcart1 b {
     display: inline-block;
     height: 18px;
     width: 18px;
@@ -269,6 +270,7 @@
     overflow: hidden;
     vertical-align: middle;
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    background-color: #fff;
 }
 
 #image2 {
@@ -296,10 +298,10 @@
     font-size: 14px;
 }
 
-.favorcart2 {
+#favorcart2 {
     width: 115px;
     height: 28px;
-    background: url(images/cart1.png);
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid #999999;
@@ -308,9 +310,10 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    color: #000000;
 }
 
-.favorcart2 b {
+#favorcart2 b {
     display: inline-block;
     height: 18px;
     width: 18px;
@@ -320,6 +323,7 @@
     overflow: hidden;
     vertical-align: middle;
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    background-color: #fff;
 }
 
 #image3 {
@@ -347,10 +351,10 @@
     font-size: 14px;
 }
 
-.favorcart3 {
+#favorcart3 {
     width: 115px;
     height: 28px;
-    background: url(images/cart1.png);
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid #999999;
@@ -359,9 +363,10 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    color: #000000;
 }
 
-.favorcart3 b {
+#favorcart3 b {
     display: inline-block;
     height: 18px;
     width: 18px;
@@ -371,6 +376,7 @@
     overflow: hidden;
     vertical-align: middle;
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    background-color: #fff;
 }
 
 #image4 {
@@ -398,10 +404,10 @@
     font-size: 14px;
 }
 
-.favorcart4 {
+#favorcart4 {
     width: 115px;
     height: 28px;
-    background: url(images/cart1.png);
+    background-color: #fff;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid #999999;
@@ -410,9 +416,10 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    color: #000000;
 }
 
-.favorcart4 b {
+#favorcart4 b {
     display: inline-block;
     height: 18px;
     width: 18px;
@@ -422,7 +429,10 @@
     overflow: hidden;
     vertical-align: middle;
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    color: #000000;
+    background-color: #fff;
 }
+
 #image-1 {
     width: 160px;
     height: 160px;
@@ -430,6 +440,7 @@
     background: url(images/shopping1.jpg);
     margin-top: 20px;
 }
+
 #image-2 {
     width: 160px;
     height: 160px;
@@ -437,6 +448,7 @@
     background: url(images/shopping2.jpg);
     margin-top: 20px;
 }
+
 #image-3 {
     width: 160px;
     height: 160px;
@@ -444,6 +456,7 @@
     background: url(images/shopping3.jpg);
     margin-top: 20px;
 }
+
 #image-4 {
     width: 160px;
     height: 160px;
@@ -451,8 +464,279 @@
     background: url(images/shopping4.jpg);
     margin-top: 20px;
 }
+
 #div1_4_3 {
     display: none;
     width: 990px;
     height: 306px;
+}
+
+#cartxs {
+    display: block;
+}
+
+#qbsp {
+    width: 65px;
+    height: 30px;
+    border-bottom: 1px solid #e6393c;
+    margin: 0 auto;
+    margin-left: 264px;
+    color: #e6393c;
+}
+
+#carttitle {
+    width: 989px;
+    height: 40px;
+    background: #f3f3f3;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.selectcc {
+    float: left;
+    margin-left: 10px;
+}
+
+.carttitle1 {
+    font-size: 13px;
+    color: #666666;
+}
+
+#cartdisplay {
+    width: 990px;
+    height: 300px;
+    border: 1px solid;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.cartitem {
+    width: 990px;
+    height: 136px;
+    border-top: 1px solid #c5c5c5;
+    background-color: #fff4e8;
+}
+
+.cartitemselect {
+    width: 123px;
+    height: 84px;
+    /*border:1px solid;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.selectcb {
+    float: left;
+    margin-right: 10px;
+}
+
+.cartitemimage {
+    float: left;
+}
+
+.itemimage {
+    width: 80px;
+    height: 84px;
+}
+
+.itemshangpin {
+    width: 208px;
+    float: left;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.itemdanjia {
+    width: 330px;
+    float: left;
+    font-size: 12px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.itemshuliang {
+    width: 140px;
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.crement {
+    width: 17px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+.crement:horver {
+    cursor: pointer;
+    /*手型*/
+}
+
+.num {
+    width: 46px;
+    height: 21px;
+    border: 0px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    background-color: white;
+    text-align: center;
+}
+
+.increment {
+    width: 17px;
+    height: 22px;
+    background-color: white;
+    border: 1px solid #cacaca;
+}
+
+.increment:horver {
+    cursor: pointer;
+    /*手型*/
+}
+
+.itemxiaoji {
+    width: 80px;
+    height: 45px;
+    font-weight: 900;
+    margin-top: 15px;
+    text-align: center;
+    /*border:1px solid;*/
+    float: left;
+    font-size: 12px;
+}
+
+.caozuo {
+    width: 75px;
+    margin-top: 15px;
+    text-align: right;
+    font-size: 12px;
+    color: #cacaca;
+    float: left;
+}
+
+.caozuo a {
+    color: black;
+    text-decoration: none;
+}
+
+#v1,#v2,#v3,#v4,#vv1,#vv3,#vv2,#vv4{
+    border: 1px dashed #cacaca;
+}
+
+#favorcart-1 {
+    width: 115px;
+    height: 28px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #000000;
+}
+
+#favorcart-1 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    color: #000000;
+    background-color: #fff;
+}
+#favorcart-2{
+    width: 115px;
+    height: 28px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #000000;
+}
+
+#favorcart-2 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    color: #000000;
+    background-color: #fff;
+}
+#favorcart-3 {
+    width: 115px;
+    height: 28px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #000000;
+}
+
+#favorcart-3 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    color: #000000;
+    background-color: #fff;
+}
+#favorcart-4 {
+    width: 115px;
+    height: 28px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #000000;
+}
+
+#favorcart-4 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+    color: #000000;
+    background-color: #fff;
 }

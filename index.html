@@ -87,6 +87,36 @@
                 <b>购物车内暂时没有商品，登录之后将显示您之前加入的商品</b>
             </div>
         </div>
+        <div id="cartxs">
+            <div id="qbsp">
+                <b>全部商品</b>
+            </div>
+            <div id="carttitle">
+                <div class="selectcc"><input type="checkbox"></div>
+                <div class="carttitle1">&nbsp&nbsp全选</div>
+                <div class="carttitle1" style="margin-left: 80px;">商品</div>
+                <div class="carttitle1" style="margin-left: 475px;">单价</div>
+                <div class="carttitle1" style="margin-left: 70px;">数量</div>
+                <div class="carttitle1" style="margin-left: 80px;">小计</div>
+                <div class="carttitle1" style="margin-left: 80px;">操作</div>
+            </div>
+        
+            <div id="cartdisplay">
+                <!-- <div class="cartitem" id="cartitem1">
+                    <div class="cartitemselect">
+                        <div class="selectcb"><input type="checkbox" name=""></div>
+                        <div class="cartitemimage"><img class="itemimage" src="images/favor1.jpg"></div>
+                    </div>
+                    <div class="itemshangpin">React Native跨平台移动应用开发（第二版）</div>
+                    <div class="itemdanjia" id="itemdanjia1">￥78.2</div>
+                    <div class="itemshuliang">
+                        <input class="crement" style="padding: 2px 2px 2px;" type="button" value="-" onclick="crement()"><input class="num" id="num1" type="text" value="1" disabled="true"><input class="increment" style="padding: 2px 4px 2px;" type="button" value="+" onclick="increment()">
+                    </div>
+                    <div class="itemxiaoji" id="itemxiaoji1"></div>
+                    <div class="caozuo"><a href="javascript:removeitem();">删除</a></div>
+                </div> -->
+            </div>
+        </div>
         <div class="div1_4">
             <div class="div1_4_1">
                 <div>
@@ -100,45 +130,45 @@
             </div>
             <div id="div1_4_2">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="v1" onmousemove="cvitem(1)" onmouseout="rvitem(1)">
                         <div class="itemdv1">
                             <div id="image1"></div>
                             <div class="title1">React Native跨平台移动应用开发（第二版）</div>
                             <div class="price1">￥78.20</div>
-                            <div class="favorcart1">
+                            <div id="favorcart1" onclick="additem(1)" onmousemove="chitem(1)" onmouseout="ritem(1)">
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="v2" onmousemove="cvitem(2)" onmouseout="rvitem(2)">
                         <div class="itemdv2">
                             <div id="image2"></div>
                             <div class="title2">斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</div>
                             <div class="price2">￥78.20</div>
-                            <div class="favorcart2">
+                            <div id="favorcart2" onclick="additem(2)" onmousemove="chitem(2)" onmouseout="ritem(2)">
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="v3" onmousemove="cvitem(3)" onmouseout="rvitem(3)">
                         <div class="itemdv3">
                             <div id="image3"></div>
                             <div class="title3">React Native移动开发实战</div>
                             <div class="price3">￥399.00</div>
-                            <div class="favorcart3">
+                            <div id="favorcart3" onclick="additem(3)" onmousemove="chitem(3)" onmouseout="ritem(3)">
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="v4" onmousemove="cvitem(4)" onmouseout="rvitem(4)">
                         <div class="itemdv4">
                             <div id="image4"></div>
                             <div class="title4">vue.js前端开发 快速入门与专业应用</div>
                             <div class="price4">￥35.50</div>
-                            <div class="favorcart4">
+                            <div id="favorcart4" onclick="additem(4)" onmousemove="chitem(4)" onmouseout="ritem(4)">
                                 <b></b>
                                 加入购物车
                             </div>
@@ -148,45 +178,45 @@
             </div>
             <div id="div1_4_3">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="vv1" onmousemove="c_vitem(1)" onmouseout="r_vitem(1)">
                         <div class="itemdv1">
                             <div id="image-1"></div>
                             <div class="title1">React Native跨平台移动应用开发（第二版）</div>
                             <div class="price1">￥78.20</div>
-                            <div class="favorcart1">
+                            <div id="favorcart-1" onclick="additem(1)" onmousemove="c_hitem(1)" onmouseout="r_item(1)">
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="vv2" onmousemove="c_vitem(2)" onmouseout="r_vitem(2)">
                         <div class="itemdv2">
                             <div id="image-2"></div>
                             <div class="title2">斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</div>
                             <div class="price2">￥78.20</div>
-                            <div class="favorcart2">
+                            <div id="favorcart-2" onclick="additem(2)" onmousemove="c_hitem(2)" onmouseout="r_item(2)">
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="vv3" onmousemove="c_vitem(3)" onmouseout="r_vitem(3)">
                         <div class="itemdv3">
                             <div id="image-3"></div>
                             <div class="title3">React Native移动开发实战</div>
                             <div class="price3">￥399.00</div>
-                            <div class="favorcart3">
+                            <div id="favorcart-3" onclick="additem(3)" onmousemove="c_hitem(3)" onmouseout="r_item(3)"> 
                                 <b></b>
                                 加入购物车
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="vv4" onmousemove="c_vitem(4)" onmouseout="r_vitem(4)">
                         <div class="itemdv4">
                             <div id="image-4"></div>
                             <div class="title4">vue.js前端开发 快速入门与专业应用</div>
                             <div class="price4">￥35.50</div>
-                            <div class="favorcart4">
+                            <div id="favorcart-4" onclick="additem(4)" onmousemove="c_hitem(4)"  onmouseout="r_item(4)">
                                 <b></b>
                                 加入购物车
                             </div>
