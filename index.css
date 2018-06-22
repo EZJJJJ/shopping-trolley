@@ -161,16 +161,29 @@
     height: 23px;
 }
 
-.a1 {
+#a1 {
+    display: inline-block;
     color: #e4393c;
     font-weight: 700;
     border-color: #e4393c;
     margin-right: 35px;
     padding-bottom: 3px;
+    text-decoration: none;
     border-bottom: 2px solid #e4393c;
 }
 
-.ldiv1 {
+#a2 {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 35px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    color: #666;
+    text-decoration: none;
+    font: 12px
+}
+
+#ldiv1 {
     border-radius: 4px;
     vertical-align: middle;
     height: 8px;
@@ -181,7 +194,7 @@
     background: #e4393c;
 }
 
-.ldiv2 {
+#ldiv2 {
     width: 8px;
     height: 8px;
     margin-left: 3px;
@@ -192,7 +205,8 @@
     background: #aaa;
 }
 
-.div1_4_2 {
+#div1_4_2 {
+    display: block;
     width: 990px;
     height: 306px;
 }
@@ -408,4 +422,37 @@
     overflow: hidden;
     vertical-align: middle;
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+}
+#image-1 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/shopping1.jpg);
+    margin-top: 20px;
+}
+#image-2 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/shopping2.jpg);
+    margin-top: 20px;
+}
+#image-3 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/shopping3.jpg);
+    margin-top: 20px;
+}
+#image-4 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/shopping4.jpg);
+    margin-top: 20px;
+}
+#div1_4_3 {
+    display: none;
+    width: 990px;
+    height: 306px;
 }
