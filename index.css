@@ -79,6 +79,7 @@
     z-index: 999;
     height: 100px;
     width: 331px;
+    background-color: #fff;
 }
 
 .ycdiv2 {
@@ -151,7 +152,6 @@
     margin: 0 auto;
     width: 990px;
     height: 350px;
-
 }
 
 .div1_4_1 {
@@ -192,14 +192,220 @@
     background: #aaa;
 }
 
-.div1_4_2{
+.div1_4_2 {
     width: 990px;
     height: 306px;
 }
-.row{
+
+.row {
     margin-top: 10px;
 }
-.col-md-3{
+
+.col-md-3 {
     height: 306px;
     border: 1px dashed #cacaca;
+}
+
+#image1 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/favor1.jpg);
+    margin-top: 20px;
+}
+
+.title1 {
+    width: 80%;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    height: 33px;
+}
+
+.price1 {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #c91623;
+    text-align: center;
+    font-size: 14px;
+}
+
+.favorcart1 {
+    width: 115px;
+    height: 28px;
+    background: url(images/cart1.png);
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.favorcart1 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+}
+
+#image2 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/favor2.jpg);
+    margin-top: 20px;
+}
+
+.title2 {
+    width: 80%;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    height: 33px;
+}
+
+.price2 {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #c91623;
+    text-align: center;
+    font-size: 14px;
+}
+
+.favorcart2 {
+    width: 115px;
+    height: 28px;
+    background: url(images/cart1.png);
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.favorcart2 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+}
+
+#image3 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/favor3.jpg);
+    margin-top: 20px;
+}
+
+.title3 {
+    width: 80%;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    height: 33px;
+}
+
+.price3 {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #c91623;
+    text-align: center;
+    font-size: 14px;
+}
+
+.favorcart3 {
+    width: 115px;
+    height: 28px;
+    background: url(images/cart1.png);
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.favorcart3 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
+}
+
+#image4 {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    background: url(images/favor4.jpg);
+    margin-top: 20px;
+}
+
+.title4 {
+    width: 80%;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    height: 33px;
+}
+
+.price4 {
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #c91623;
+    text-align: center;
+    font-size: 14px;
+}
+
+.favorcart4 {
+    width: 115px;
+    height: 28px;
+    background: url(images/cart1.png);
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.favorcart4 b {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    background-position: 0 -57px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+    background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
 }
