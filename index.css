@@ -217,7 +217,6 @@
 
 .col-md-3 {
     height: 306px;
-    
 }
 
 #image1 {
@@ -507,8 +506,6 @@
 
 #cartdisplay {
     width: 990px;
-    height: 300px;
-    border: 1px solid;
     margin: 0 auto;
     margin-bottom: 15px;
 }
@@ -518,6 +515,8 @@
     height: 136px;
     border-top: 1px solid #c5c5c5;
     background-color: #fff4e8;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cartitemselect {
@@ -563,13 +562,19 @@
     float: left;
     margin-top: 15px;
     text-align: center;
+    height: 22px;
+    display: flex;
+    justify-content: center;
 }
 
 .crement {
     width: 17px;
     height: 22px;
     background-color: white;
+    
     border: 1px solid #cacaca;
+    text-align: center;
+    line-height: 22px;
 }
 
 .crement:horver {
@@ -579,8 +584,8 @@
 
 .num {
     width: 46px;
-    height: 21px;
-    border: 0px;
+    height: 22px;
+    border: 0;
     border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
     background-color: white;
@@ -592,6 +597,8 @@
     height: 22px;
     background-color: white;
     border: 1px solid #cacaca;
+    text-align: center;
+    line-height: 22px;
 }
 
 .increment:horver {
@@ -616,6 +623,7 @@
     text-align: right;
     font-size: 12px;
     color: #cacaca;
+    padding-right: 15px;
     float: left;
 }
 
@@ -624,7 +632,14 @@
     text-decoration: none;
 }
 
-#v1,#v2,#v3,#v4,#vv1,#vv3,#vv2,#vv4{
+#v1,
+#v2,
+#v3,
+#v4,
+#vv1,
+#vv3,
+#vv2,
+#vv4 {
     border: 1px dashed #cacaca;
 }
 
@@ -656,7 +671,8 @@
     color: #000000;
     background-color: #fff;
 }
-#favorcart-2{
+
+#favorcart-2 {
     width: 115px;
     height: 28px;
     background-color: #fff;
@@ -684,6 +700,7 @@
     color: #000000;
     background-color: #fff;
 }
+
 #favorcart-3 {
     width: 115px;
     height: 28px;
@@ -712,6 +729,7 @@
     color: #000000;
     background-color: #fff;
 }
+
 #favorcart-4 {
     width: 115px;
     height: 28px;
@@ -739,4 +757,109 @@
     background-image: url(https://misc.360buyimg.com/user/cart/widget/cart-tabs-new/i/addtocart-icons.png);
     color: #000000;
     background-color: #fff;
+}
+
+#bottombox {
+    margin: 0 auto;
+    width: 990px;
+    height: 52px;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#aa1 {
+    float: left;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#aa1:hover {
+    float: left;
+    margin-left: 10px;
+    color: #e4393c;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#aa2 {
+    float: left;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#aa2:hover {
+    float: left;
+    margin-left: 10px;
+    color: #e4393c;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#aa3 {
+    float: left;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#aa3:hover {
+    float: left;
+    margin-left: 10px;
+    color: #e4393c;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.jdiv {
+    height: 50px;
+    width: 96px;
+    background-color: #e64346;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 52px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.xdiv {
+    color: #999;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.xdiv em {
+    color: #e4393c;
+    font-family: verdana;
+    font-weight: 700;
+    margin: 0 3px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.zdiv {
+    line-height: 20px;
+    color: #999;
+    font: 12px;
+}
+
+.zdiv em {
+    font-family: verdana;
+    font-size: 16px;
+    color: #e4393c;
+    font-weight: 700;
+    text-align: right;
+    line-height: 20px;
+    font-size: 12px;
+    margin-right: 15px;
 }

@@ -59,13 +59,41 @@ function additem(goodsid) {
         "<div class='itemshangpin'>React Native跨平台移动应用开发（第二版）</div>" +
         "<div class='itemdanjia' id='itemdanjia1'>￥78.2</div>" +
         "<div class='itemshuliang'>" +
-        "<input class='crement' style='padding: 2px 2px 2px;' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' style='padding: 2px 4px 2px;' type='button' value='+' onclick='increment()'>" +
+        "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
         "</div>" +
         "<div class='itemxiaoji' id='itemxiaoji1'></div>" +
         "<div class='caozuo'><a href='javascript:removeitem();'>删除</a></div>" +
         "</div>"
 
     $("#cartdisplay").append(content);
+}
+// 点击按钮 减少数量
+function crement() {
+    var newnum = parseInt($("#num1").val()) - 1;
+    if (newnum >= 1) {
+        $("#num1").val(newnum);
+    }
+    itemprice();
+}
+
+// 点击按钮 增加数量
+function increment() {
+    var newnum = parseInt($("#num1").val()) + 1;
+    $("#num1").val(newnum);
+    itemprice();
+}
+
+// 计算小计内容 用单价*数量
+function itemprice() {
+    var danjia = parseFloat($("#itemdanjia1").text().replace("￥", ""));
+    var shuliang = parseInt($("#num1").val());
+    var xiaoji = danjia * shuliang;
+    $("#itemxiaoji1").text("￥" + xiaoji.toFixed(2));
+}
+
+// 删除一条商品
+function removeitem() {
+    $("#cartitem1").remove();
 }
 
 function chitem(goodsid) {
@@ -81,6 +109,7 @@ function ritem(goodsid) {
     $("#favorcart" + goodsid).css("background-color", "#ffffff");
     $("#favorcart" + goodsid + " b").css("background-position", "0 -57px");
 }
+
 function c_hitem(goodsid) {
 
     $("#favorcart-" + goodsid).css("color", "#ffffff");
