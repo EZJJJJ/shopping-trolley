@@ -132,7 +132,8 @@
     font-weight: 700;
 }
 
-.div1_3 {
+#div1_3 {
+    display: block;
     margin: 0 auto;
     width: 990px;
     height: 298px;
@@ -471,7 +472,8 @@
 }
 
 #cartxs {
-    display: block;
+    margin-top:25px; 
+    display: none;
 }
 
 #qbsp {

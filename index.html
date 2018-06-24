@@ -82,7 +82,7 @@
                 <input class="text2" type="button" value="搜索">
             </div>
         </div>
-        <div class="div1_3">
+        <div id="div1_3">
             <div class="div1_3_1">
                 <b>购物车内暂时没有商品，登录之后将显示您之前加入的商品</b>
             </div>
@@ -93,9 +93,9 @@
             </div>
             <div id="carttitle">
                 <div class="selectcc">
-                    <input type="checkbox">
+                    <input type="checkbox" id="sure" onclick="abc()">
                 </div>
-                <div class="carttitle1">&nbsp&nbsp全选</div>
+                <div class="carttitle1" id="AllCheck" >&nbsp&nbsp全选</div>
                 <div class="carttitle1" style="margin-left: 80px;">商品</div>
                 <div class="carttitle1" style="margin-left: 475px;">单价</div>
                 <div class="carttitle1" style="margin-left: 70px;">数量</div>
@@ -117,22 +117,22 @@
                     <div class="itemdanjia" id="itemdanjia1">￥78.2</div>
                     <div class="itemshuliang">
                         <input class="crement" type="button" value="-" onclick="crement()">
-                        <input class="num" id="num1" type="text" value="1" disabled="true">
+                        <input class="num" id="num1" type="text" value="0" disabled="true">
                         <input class="increment" type="button" value="+" onclick="increment()">
                     </div>
                     <div class="itemxiaoji" id="itemxiaoji1"></div>
                     <div class="caozuo">
-                        <a href="javascript:removeitem();">删除</a>
+                        <a href="javascript:removeitem(1);">删除</a>
                     </div>
                 </div> -->
             </div>
             <div id="bottombox">
                 <div style="display: flex; height: 52px; align-items: center; width: 400px;">
-                    <input type="checkbox" style="margin:0 0 0 10px;">
+                    <input type="checkbox" style="margin:0 0 0 10px;" id="suree" onclick="abc2()">
                     <div style="margin-left: 10px">全选</div>
                     <a id="aa1" href="#none" style="margin-left: 10px">删除选中的商品</a>
                     <a id="aa2" href="#none" style="margin-left: 10px">移到我的关注</a>
-                    <a id="aa3" href="#none" style="margin-left: 10px">清理购物车</a>
+                    <a id="aa3" href="javascript:removeall();" style="margin-left: 10px">清理购物车</a>
                 </div>
                 <div style="height: 52px; display: flex; align-items: center;">
                     <div class="xdiv">
@@ -171,7 +171,7 @@
                             <div id="image1"></div>
                             <div class="title1">React Native跨平台移动应用开发（第二版）</div>
                             <div class="price1">￥78.20</div>
-                            <div id="favorcart1" onclick="additem(1)" onmousemove="chitem(1)" onmouseout="ritem(1)">
+                            <div id="favorcart1" onclick="additem1(1)" onmousemove="chitem(1)" onmouseout="ritem(1)">
                                 <b></b>
                                 加入购物车
                             </div>
@@ -182,7 +182,7 @@
                             <div id="image2"></div>
                             <div class="title2">斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</div>
                             <div class="price2">￥78.20</div>
-                            <div id="favorcart2" onclick="additem(2)" onmousemove="chitem(2)" onmouseout="ritem(2)">
+                            <div id="favorcart2" onclick="additem2(2)" onmousemove="chitem(2)" onmouseout="ritem(2)">
                                 <b></b>
                                 加入购物车
                             </div>
@@ -193,7 +193,7 @@
                             <div id="image3"></div>
                             <div class="title3">React Native移动开发实战</div>
                             <div class="price3">￥399.00</div>
-                            <div id="favorcart3" onclick="additem(3)" onmousemove="chitem(3)" onmouseout="ritem(3)">
+                            <div id="favorcart3" onclick="additem3(3)" onmousemove="chitem(3)" onmouseout="ritem(3)">
                                 <b></b>
                                 加入购物车
                             </div>
@@ -204,7 +204,7 @@
                             <div id="image4"></div>
                             <div class="title4">vue.js前端开发 快速入门与专业应用</div>
                             <div class="price4">￥35.50</div>
-                            <div id="favorcart4" onclick="additem(4)" onmousemove="chitem(4)" onmouseout="ritem(4)">
+                            <div id="favorcart4" onclick="additem4(4)" onmousemove="chitem(4)" onmouseout="ritem(4)">
                                 <b></b>
                                 加入购物车
                             </div>
