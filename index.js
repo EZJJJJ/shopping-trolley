@@ -36,7 +36,7 @@ $(document).ready(
             $("#div1_4_3").css("display", "block");
             $("#div1_4_2").css("display", "none");
         });
-        
+
     }
 
 );
@@ -83,20 +83,24 @@ function removeall() {
 }
 
 // 添加一条商品到购物车
-function additem1(goodsid) {
+function additem(goodsid) {
     $("#div1_3").css("display", "none");
     $("#cartxs").css("display", "block");
     var itemdvid = "#itemdv" + goodsid;
     var title = $(itemdvid + " .title").text();
-
-
+    var price = $(itemdvid + " .price").text();
+    var imgurl = $("#image"+goodsid).css("background-image");
+    
+    imgurl = imgurl.split("(")[1].replace(")","");
     var content = "<div class='cartitem' id='cartitem1'>" +
         "<div class='cartitemselect'>" +
         "<div class='selectcb'><input type='checkbox'></div>" +
-        "<div class='cartitemimage'><img class='itemimage' src='images/favor1.jpg'></div>" +
+        "<div class='cartitemimage'><img class='itemimage' src="+imgurl+"></div>" +
         "</div>" +
-        "<div class='itemshangpin'>React Native跨平台移动应用开发（第二版）</div>" +
-        "<div class='itemdanjia' id='itemdanjia1'>￥78.2</div>" +
+        "<div class='itemshangpin'>" +
+        title +
+        "</div>" +
+        "<div class='itemdanjia' id='itemdanjia1'>"+price+"</div>" +
         "<div class='itemshuliang'>" +
         "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
         "</div>" +
@@ -106,104 +110,34 @@ function additem1(goodsid) {
     $("#cartdisplay").append(content);
 }
 
-function additem2(goodsid) {
-    $("#div1_3").css("display", "none");
-    $("#cartxs").css("display", "block");
-    var itemdvid = "#itemdv" + goodsid;
-    var title = $(itemdvid + " .title").text();
-
-
-    var content = "<div class='cartitem' id='cartitem2'>" +
-        "<div class='cartitemselect'>" +
-        "<div class='selectcb'><input type='checkbox'></div>" +
-        "<div class='cartitemimage'><img class='itemimage' src='images/favor2.jpg'></div>" +
-        "</div>" +
-        "<div class='itemshangpin'>斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</div>" +
-        "<div class='itemdanjia' id='itemdanjia1'>￥78.2</div>" +
-        "<div class='itemshuliang'>" +
-        "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
-        "</div>" +
-        "<div class='itemxiaoji' id='itemxiaoji1'></div>" +
-        "<div class='caozuo'><a href='javascript:removeitem(2);'>删除</a></div>" +
-        "</div>"
-
-    $("#cartdisplay").append(content);
-}
-
-function additem3(goodsid) {
-    $("#div1_3").css("display", "none");
-    $("#cartxs").css("display", "block");
-    var itemdvid = "#itemdv" + goodsid;
-    var title = $(itemdvid + " .title").text();
-
-
-    var content = "<div class='cartitem' id='cartitem3'>" +
-        "<div class='cartitemselect'>" +
-        "<div class='selectcb'><input type='checkbox'></div>" +
-        "<div class='cartitemimage'><img class='itemimage' src='images/favor3.jpg'></div>" +
-        "</div>" +
-        "<div class='itemshangpin'>React Native移动开发实战</div>" +
-        "<div class='itemdanjia' id='itemdanjia1'>￥399.00</div>" +
-        "<div class='itemshuliang'>" +
-        "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
-        "</div>" +
-        "<div class='itemxiaoji' id='itemxiaoji1'></div>" +
-        "<div class='caozuo'><a href='javascript:removeitem(3);'>删除</a></div>" +
-        "</div>"
-
-    $("#cartdisplay").append(content);
-}
-
-function additem4(goodsid) {
-    $("#div1_3").css("display", "none");
-    $("#cartxs").css("display", "block");
-    var itemdvid = "#itemdv" + goodsid;
-    var title = $(itemdvid + " .title").text();
-
-    var content = "<div class='cartitem' id='cartitem4'>" +
-        "<div class='cartitemselect'>" +
-        "<div class='selectcb'><input type='checkbox'></div>" +
-        "<div class='cartitemimage'><img class='itemimage' src='images/favor4.jpg'></div>" +
-        "</div>" +
-        "<div class='itemshangpin'>vue.js前端开发 快速入门与专业应用</div>" +
-        "<div class='itemdanjia' id='itemdanjia1'>￥35.50</div>" +
-        "<div class='itemshuliang'>" +
-        "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
-        "</div>" +
-        "<div class='itemxiaoji' id='itemxiaoji1'></div>" +
-        "<div class='caozuo'><a href='javascript:removeitem(4);'>删除</a></div>" +
-        "</div>"
-
-    $("#cartdisplay").append(content);
-};
 
 function chitem(goodsid) {
 
-    $("#favorcart" + goodsid).css("color", "#ffffff");
-    $("#favorcart" + goodsid).css("background-color", "#e4393c");
-    $("#favorcart" + goodsid + " b").css("background-position", "-28px -56px")
+    $("#itemdv" + goodsid+" #favorcart").css("color", "#ffffff");
+    $("#itemdv" + goodsid+" #favorcart").css("background-color", "#e4393c");
+    $("#itemdv" + goodsid+" #favorcart" + " b").css("background-position", "-28px -56px")
 
 }
 
 function ritem(goodsid) {
-    $("#favorcart" + goodsid).css("color", "#000000");
-    $("#favorcart" + goodsid).css("background-color", "#ffffff");
-    $("#favorcart" + goodsid + " b").css("background-position", "0 -57px");
+    $("#itemdv" + goodsid+" #favorcart").css("color", "#000000");
+    $("#itemdv" + goodsid+" #favorcart").css("background-color", "#ffffff");
+    $("#itemdv" + goodsid+" #favorcart" + " b").css("background-position", "0 -57px");
 }
 
-function c_hitem(goodsid) {
+// function c_hitem(goodsid) {
 
-    $("#favorcart-" + goodsid).css("color", "#ffffff");
-    $("#favorcart-" + goodsid).css("background-color", "#e4393c");
-    $("#favorcart-" + goodsid + " b").css("background-position", "-28px -56px")
+//     $("#favorcart" + goodsid).css("color", "#ffffff");
+//     $("#favorcart" + goodsid).css("background-color", "#e4393c");
+//     $("#favorcart" + goodsid + " b").css("background-position", "-28px -56px")
 
-}
+// }
 
-function r_item(goodsid) {
-    $("#favorcart-" + goodsid).css("color", "#000000");
-    $("#favorcart-" + goodsid).css("background-color", "#ffffff");
-    $("#favorcart-" + goodsid + " b").css("background-position", "0 -57px");
-}
+// function r_item(goodsid) {
+//     $("#favorcart" + goodsid).css("color", "#000000");
+//     $("#favorcart" + goodsid).css("background-color", "#ffffff");
+//     $("#favorcart" + goodsid + " b").css("background-position", "0 -57px");
+// }
 
 function cvitem(goodsid) {
     $("#v" + goodsid).css("border", "1px solid #e4393c");
