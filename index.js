@@ -67,8 +67,9 @@ function itemprice() {
 
 // 删除一条商品
 function removeitem(e) {
-    $("#cartitem" + e).remove();
+    $("#cart_item" + e).remove();
 }
+
 
 //删除所有商品
 function removeall() {
@@ -90,9 +91,10 @@ function additem(goodsid) {
     var title = $(itemdvid + " .title").text();
     var price = $(itemdvid + " .price").text();
     var imgurl = $("#image"+goodsid).css("background-image");
+    var cart_item_id = "cart_item"+goodsid;
     
     imgurl = imgurl.split("(")[1].replace(")","");
-    var content = "<div class='cartitem' id='cartitem1'>" +
+    var content = "<div class='cartitem' id="+cart_item_id+">" +
         "<div class='cartitemselect'>" +
         "<div class='selectcb'><input type='checkbox'></div>" +
         "<div class='cartitemimage'><img class='itemimage' src="+imgurl+"></div>" +
@@ -105,7 +107,7 @@ function additem(goodsid) {
         "<input class='crement' type='button' value='-'' onclick='crement()'><input class='num' id='num1' type='text' value='1' disabled='true'><input class='increment' type='button' value='+' onclick='increment()'>" +
         "</div>" +
         "<div class='itemxiaoji' id='itemxiaoji1'></div>" +
-        "<div class='caozuo'><a href='javascript:removeitem(1);'>删除</a></div>" +
+        "<div class='caozuo'><a href='javascript:removeitem("+goodsid+");'>删除</a></div>" +
         "</div>"
     $("#cartdisplay").append(content);
 }
