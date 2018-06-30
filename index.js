@@ -172,12 +172,65 @@ function xuanz() {
     for (var i = 1; i <= 8; i++) {
         if ($("#ch"+i).is(':checked')) {
             removeitem(i);
-            console.log("if");
         }
     }
     if(d1+d2+d3+d4+d5+d6+d7+d8==0){
         $("#div1_3").css("display", "block");
         $("#cartxs").css("display", "none");
+    }
+}
+
+function zxc(){
+    console.log($("#sure").is(':checked'));
+    if ($("#sure").is(':checked')){
+        for (var i = 1; i <= 8; i++) {
+            console.log($("#ch"+i).is(':checked'));
+            if ($("#ch"+i).is(':checked')) {
+                
+            }
+            else{
+                console.log(i);
+                $("#ch"+i).prop("checked",'true');
+                $("#suree").prop("checked",'true');
+            }
+        }
+    }
+    else{
+        for (var i = 1; i <= 8; i++) {
+            console.log($("#ch"+i).is(':checked'));
+            if ($("#ch"+i).is(':checked')) {
+                $("#ch"+i).removeAttr("checked");
+                $("#suree").removeAttr("checked");
+            }
+        }
+
+    }
+}
+
+function zxc2(){
+    console.log($("#suree").is(':checked'));
+    if ($("#suree").is(':checked')){
+        for (var i = 1; i <= 8; i++) {
+            console.log($("#ch"+i).is(':checked'));
+            if ($("#ch"+i).is(':checked')) {
+                
+            }
+            else{
+                console.log(i);
+                $("#ch"+i).prop("checked",'true');
+                $("#sure").prop("checked",'true');
+            }
+        }
+    }
+    else{
+        for (var i = 1; i <= 8; i++) {
+            console.log($("#ch"+i).is(':checked'));
+            if ($("#ch"+i).is(':checked')) {
+                $("#ch"+i).removeAttr("checked");
+                $("#sure").removeAttr("checked");
+            }
+        }
+
     }
 }
 
@@ -323,102 +376,4 @@ function c_vitem(goodsid) {
 
 function r_vitem(goodsid) {
     $("#vv" + goodsid).css("border", "1px dashed #cacaca");
-}
-
-function abc() {
-    var sure = document.getElementById('sure');
-    //获取id名位sure的元素
-    var cartdisplay = document.getElementById("cartdisplay"); //获取id名位list的元素
-    var lis = cartdisplay.getElementsByTagName('input'); //定义一个变量为lis的元素来获取list内的input标签
-    var index = 0;
-    //定义index来计数
-
-    sure.onclick = function () {
-        if (sure.checked == true) {
-            for (var i = 0; i < lis.length; i++) {
-
-                lis[i].checked = true;
-
-                index = 10;
-            }
-
-
-        } else {
-            for (var i = 0; i < lis.length; i++) {
-
-                lis[i].checked = false;
-
-                index = 0;
-            }
-        }
-
-    }
-
-    //以上是对全选框做得函数(只要sure被点击 则全部被选中，否则都不选中。即sure可控制所有按钮的被选择状态)
-
-
-    for (var i = 0; i < lis.length; i++) { //获取一下i的范围
-        lis[i].onclick = function () { //对每个lis[i]设置一个点击函数 如果为真 index++（自增1）
-            if (this.checked == true) {
-                index++;
-                console.log(index); //通过console.log可以实时查看当前index的值
-                if (index == lis.length) { //当index的值为i(也就是说明ol下面的所有复选框被选中了)
-                    sure.checked = true; //全选框将会自动被选中
-                }
-            } else {
-                index--; //假如lis[i]没有被选中 那么index的值减一
-                sure.checked = false; //只要是lis[i]没有全部被选中，sure就默认不被选中
-            }
-        }
-    }
-
-}
-
-function abc2() {
-    var suree = document.getElementById('suree');
-    //获取id名位sure的元素
-    var cartdisplay = document.getElementById("cartdisplay"); //获取id名位list的元素
-    var lis = cartdisplay.getElementsByTagName('input'); //定义一个变量为lis的元素来获取list内的input标签
-    var index = 0;
-    //定义index来计数
-
-    suree.onclick = function () {
-        if (suree.checked == true) {
-            for (var i = 0; i < lis.length; i++) {
-
-                lis[i].checked = true;
-
-                index = 10;
-            }
-
-
-        } else {
-            for (var i = 0; i < lis.length; i++) {
-
-                lis[i].checked = false;
-
-                index = 0;
-            }
-        }
-
-    }
-
-    //以上是对全选框做得函数(只要sure被点击 则全部被选中，否则都不选中。即sure可控制所有按钮的被选择状态)
-
-
-    for (var i = 0; i < lis.length; i++) { //获取一下i的范围
-        lis[i].onclick = function () { //对每个lis[i]设置一个点击函数 如果为真 index++（自增1）
-            if (this.checked == true) {
-                index++;
-                console.log(index); //通过console.log可以实时查看当前index的值
-                if (index == lis.length) { //当index的值为i(也就是说明ol下面的所有复选框被选中了)
-                    suree.checked = true; //全选框将会自动被选中
-                }
-            } else {
-                index--; //假如lis[i]没有被选中 那么index的值减一
-                suree.checked = false; //只要是lis[i]没有全部被选中，sure就默认不被选中
-            }
-        }
-    }
-
 }
