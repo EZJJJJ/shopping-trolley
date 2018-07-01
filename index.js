@@ -180,6 +180,7 @@ function xuanz() {
     }
 }
 
+//全选
 function zxc(){
     console.log($("#sure").is(':checked'));
     if ($("#sure").is(':checked')){
