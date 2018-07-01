@@ -83,12 +83,12 @@
                 <input class="text2" type="button" value="搜索">
             </div>
         </div>
-        <div id="div1_3">
+        <div id="div1_3" ondrop='drop(event)'>
             <div class="div1_3_1">
                 <b>购物车内暂时没有商品，登录之后将显示您之前加入的商品</b>
             </div>
         </div>
-        <div id="cartxs">
+        <div id="cartxs" ondrop='drop(event)'>
             <div id="qbsp">
                 <b style="height: 30px; border-bottom: 2px solid #e6393c;">全部商品</b>
             </div>
@@ -167,7 +167,7 @@
             </div>
             <div id="div1_4_2">
                 <div class="row">
-                    <div class="col-md-3" id="v1" onmousemove="cvitem(1)" onmouseout="rvitem(1)">
+                    <div class="col-md-3" id="v1" draggable="true" ondragstart="drag(event)" onmousemove="cvitem(1)" onmouseout="rvitem(1)">
                         <div id="itemdv1">
                             <div id="image1"></div>
                             <div class="title">React Native跨平台移动应用开发（第二版）</div>
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="v2" onmousemove="cvitem(2)" onmouseout="rvitem(2)">
+                    <div class="col-md-3" id="v2" draggable="true" ondragstart="drag(event)" onmousemove="cvitem(2)" onmouseout="rvitem(2)">
                         <div id="itemdv2">
                             <div id="image2"></div>
                             <div class="title">斐讯K2 1200M智能双频无线路由器 WIFI穿墙 PSG1218</div>
@@ -189,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="v3" onmousemove="cvitem(3)" onmouseout="rvitem(3)">
+                    <div class="col-md-3" id="v3" draggable="true" ondragstart="drag(event)" onmousemove="cvitem(3)" onmouseout="rvitem(3)">
                         <div id="itemdv3">
                             <div id="image3"></div>
                             <div class="title">React Native移动开发实战</div>
@@ -200,7 +200,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="v4" onmousemove="cvitem(4)" onmouseout="rvitem(4)">
+                    <div class="col-md-3" id="v4" draggable="true" ondragstart="drag(event)" onmousemove="cvitem(4)" onmouseout="rvitem(4)">
                         <div id="itemdv4">
                             <div id="image4"></div>
                             <div class="title">vue.js前端开发 快速入门与专业应用</div>
@@ -215,7 +215,7 @@
             </div>
             <div id="div1_4_3">
                 <div class="row">
-                    <div class="col-md-3" id="vv1" onmousemove="c_vitem(1)" onmouseout="r_vitem(1)">
+                    <div class="col-md-3" id="v5" draggable="true" ondragstart="drag(event)" onmousemove="c_vitem(1)" onmouseout="r_vitem(1)">
                         <div id="itemdv5">
                             <div id="image5"></div>
                             <div class="title">React Native跨平台移动应用开发（第二版）</div>
@@ -226,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="vv2" onmousemove="c_vitem(2)" onmouseout="r_vitem(2)">
+                    <div class="col-md-3" id="v6" draggable="true" ondragstart="drag(event)" onmousemove="c_vitem(2)" onmouseout="r_vitem(2)">
                         <div id="itemdv6">
                             <div id="image6"></div>
                             <div class="title">360随身WiFi3 300M 无线网卡 迷你路由器 黑色</div>
@@ -237,7 +237,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="vv3" onmousemove="c_vitem(3)" onmouseout="r_vitem(3)">
+                    <div class="col-md-3" id="v7" draggable="true" ondragstart="drag(event)" onmousemove="c_vitem(3)" onmouseout="r_vitem(3)">
                         <div id="itemdv7">
                             <div id="image7"></div>
                             <div class="title">React Native移动开发实战</div>
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3" id="vv4" onmousemove="c_vitem(4)" onmouseout="r_vitem(4)">
+                    <div class="col-md-3" id="v8" draggable="true" ondragstart="drag(event)" onmousemove="c_vitem(4)" onmouseout="r_vitem(4)">
                         <div id="itemdv8">
                             <div id="image8"></div>
                             <div class="title">vue.js前端开发 快速入门与专业应用</div>

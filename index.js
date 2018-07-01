@@ -372,9 +372,29 @@ function rvitem(goodsid) {
 }
 
 function c_vitem(goodsid) {
-    $("#vv" + goodsid).css("border", "1px solid #e4393c");
+    $("#v" + goodsid).css("border", "1px solid #e4393c");
 }
 
 function r_vitem(goodsid) {
-    $("#vv" + goodsid).css("border", "1px dashed #cacaca");
+    $("#v" + goodsid).css("border", "1px dashed #cacaca");
 }
+//允许放置的方法：默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
+function allowDrop(ev) {
+    ev.preventDefault();
+ }
+ 
+ //拖动方法，获取被拖元素：数据类型是 "Text"，值是可拖动元素的 id 。
+ function drag(ev) {
+     ev.dataTransfer.setData("Text", ev.target.id);
+ }
+ 
+ //放置方法：把被拖元素追加到放置元素（目标元素）中
+ function drop(ev) {
+    ev.preventDefault(); 
+    ev.stopPropagation(); 
+     var data = ev.dataTransfer.getData("Text");
+    console.log(data);
+    var iid = parseInt(data.replace("v", ""));
+    console.log(iid);
+    additem(iid)
+ }
